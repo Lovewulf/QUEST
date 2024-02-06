@@ -1,0 +1,10 @@
+module.exports = (sequelize, DataTypes) => {
+    const FacultyQualification = sequelize.define('facultyQualification', {
+        id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
+        faculty_id: { type: DataTypes.INTEGER, allowNull: false },
+        qualification: { type: DataTypes.STRING },
+        institution: { type: DataTypes.STRING },
+        year: { type: DataTypes.STRING }
+    });
+    return FacultyQualification;
+};

@@ -1,0 +1,8 @@
+module.exports = (sequelize, DataTypes) => {
+    const FacultyResearchInterest = sequelize.define('facultyResearchInterest', {
+        id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
+        faculty_id: { type: DataTypes.INTEGER, allowNull: false },
+        interest: { type: DataTypes.TEXT }
+    });
+    return FacultyResearchInterest;
+};

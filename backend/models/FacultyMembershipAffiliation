@@ -1,0 +1,13 @@
+module.exports = (sequelize, DataTypes) => {
+    const FacultyMembershipAffiliation = sequelize.define('FacultyMembershipAffiliation', {
+        id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
+        faculty_id: { type: DataTypes.INTEGER, allowNull: false },
+        membership_name: { type: DataTypes.STRING },
+        membership_type: { type: DataTypes.STRING },
+        organization: { type: DataTypes.STRING },
+        start_date: { type: DataTypes.DATE },
+        end_date: { type: DataTypes.DATE }
+    });
+
+    return FacultyMembershipAffiliation;
+};

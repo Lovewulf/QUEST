@@ -1,0 +1,180 @@
+
+.faculty-directory header {
+  background-image: linear-gradient(rgba(218, 218, 240, 0.322), rgba(0, 0, 0, 0.945)), url('./images/Directory.png');
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns content to the bottom */
+    text-align: end; /* Centers the text horizontally */
+    background-size: cover; /* Cover the entire header area */
+    background-position: center; /* Center the background image */
+    height: 400px; /* Increase this value to adjust the height */
+    padding: 10px; /* Adjust padding as needed */
+  }
+
+  .faculty-detail header {
+    background-image: linear-gradient(rgba(218, 218, 240, 0.322), rgba(0, 0, 0, 0.945)), url('./images/faculty.jpg');
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; /* Aligns content to the bottom */
+      text-align: end; /* Centers the text horizontally */
+      background-size: cover; /* Cover the entire header area */
+      background-position: center; /* Center the background image */
+      height: 400px; /* Increase this value to adjust the height */
+      padding: 10px; /* Adjust padding as needed */
+    }
+  
+  
+
+  .faculty-profile-container {
+    display: flex;
+    gap: 15px; /* Adjust the gap between left and right columns */
+   
+  }
+
+
+/* Vertical line */
+.vertical-line {
+  width: 1px; /* Line width */
+  background-color: lightgray; /* Line color */
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+.right-column hr {
+  border: 0; /* Remove default border */
+  height: 1px; /* Line thickness */
+  background-color: #413968; /* Line color */
+  margin: 10px 0; /* Space above and below the line */
+}
+
+
+.right-column > div {
+  margin-bottom: 20px; /* Space between sections */
+}
+
+  
+  .left-column {
+    flex: 3; /* Takes 25% of the space */
+    max-width: 35%;
+  }
+  
+  .right-column {
+    flex: 1; /* Takes the remaining 75% of the space */
+  }
+
+
+
+
+
+  
+
+  .faculty-image {
+    width: 150px; /* Adjust as necessary */
+    height: 150px; /* Adjust as necessary */
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+
+
+
+.faculty-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.faculty-designation {
+  font-size: 14px;
+}
+
+.faculty-department {
+  font-size: 14px;
+  color: #3e77b4; /* Navy blue */
+}
+
+.faculty-contact p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.fa-envelope, .fa-phone {
+  margin-right: 10px;
+}
+
+.faculty-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.faculty-member {
+  flex-basis: calc(33.33% - 10px);
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-right: 2px solid #ccc;
+}
+
+.faculty-info {
+  flex-grow: 1; /* Allows the faculty info to take up remaining space */
+  margin-right: 20px; /* Space between the info and the image */
+}
+
+.faculty-member:last-child {
+  border-right: none; /* Remove border for the last element */
+}
+
+.filter-section {
+  margin-bottom: 20px; /* Adjust as needed for spacing */
+}
+
+.department-select {
+  font-size: 14px;
+  font-weight: bold;
+  color: #251010;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.department-select optgroup {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Custom scrollbar styles */
+.department-select::-webkit-scrollbar {
+  width: 10px;
+}
+
+.department-select::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.department-select::-webkit-scrollbar-thumb {
+  background: #f12222;
+}
+
+.department-select::-webkit-scrollbar-thumb:hover {
+  background: #6b38ca;
+}
+
+.clear-button {
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.alphabet-header {
+  font-weight: bold;
+  font-size: 1.5em;
+}

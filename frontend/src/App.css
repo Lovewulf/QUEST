@@ -1,0 +1,206 @@
+/* General App Styles */
+.App {
+  text-align: center;
+}
+
+/* Font Styles */
+h1, h2, h3, h4, p, a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Style */
+header h1 {
+  font-size: 4rem;
+}
+
+/* University Name Style */
+.university-name {
+  font-family: 'Montserrat', sans-serif;
+  color: #000080;
+  font-weight: normal;
+}
+
+/* Static Menu Styles */
+.top-links {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 20px;
+  padding-top: 10px;
+  height: 50px;
+  background-color: #2b0f5f;
+  font-size: 0.9em;
+  width: 100%;
+  top: 0;
+}
+
+.top-links a {
+  margin-right: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.top-links a:hover {
+  text-decoration: underline;
+}
+
+.top-bar-container {
+  background-color: #2b0f5f;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 1010;
+  left: 0;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 992px) {
+  .top-bar-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .top-bar-container {
+    display: none;
+  }
+}
+
+/* Scale Hover Effect */
+.scale-hover-effect {
+  transition: transform .5s ease;
+}
+
+.scale-hover-effect:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Social Icons */
+.footer-social-icons li:hover svg {
+  fill: #374555;
+}
+
+.footer-navigation li:hover {
+  color: #122538;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #e6cfcf;
+  z-index: 999;
+  padding: 0 25%;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  color: rgb(74, 13, 145);
+}
+
+
+
+
+
+/* Faculty Popup Styles */
+.custom-popup {
+
+  
+  background-size: cover; /* Cover the entire area of the popup */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-color: rgba(88, 105, 201, 1); /* Add a white background with transparency */
+
+  
+
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates a responsive number of columns */
+  gap: 1px; /* Adjust the space between columns */
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  
+  background: linear-gradient(135deg, rgb(18, 5, 65), rgba(18, 5, 65, 0.863));
+  border: 1px solid transparent;
+  box-shadow: 0 8px 16px rgba(17, 6, 59, 0.801);
+  z-index: 998;
+  padding: 20px;
+  display: none; /* Initially hidden, shown on hover */
+}
+
+
+
+
+.small-text {
+  font-size: 0.8em; /* Adjust the size as needed */
+  color: #ffffff; /* Initial color */
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.small-text:hover {
+  color: #3e969b; /* New color on hover */
+}
+
+.title-name {
+  font-size: 0.9em; /* Adjust size as needed */
+  color: #ffffff; /* Change color as needed */
+}
+
+.popup-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-column {
+  flex: 1;
+  min-width: 200px; /* Adjust as needed */
+  margin-right: 20px; /* Spacing between columns */
+  margin: 0 10px; /* Adds margin to the left and right */
+}
+nav-link:not(:first-child)::before {
+  content: '|';
+  margin-right: 10px;
+  color: #fff; /* Adjust the color to match your navbar */
+}
+.popup-column:not(:last-child) {
+  border-right: 1px solid #4e4848bb; /* Adds a vertical line */
+  padding-right: 10px; /* Padding to separate content from the line */
+}
+
+
+.nav-item:hover .custom-popup, 
+.custom-popup:hover {
+  display: block; /* Show popup on hover */
+}
+@media (max-width: 992px) {
+  .custom-popup {
+    grid-template-columns: 1fr; /* Stack items in a single column on smaller screens */
+  }
+
+  .popup-column {
+    min-width: 100%; /* Full width for smaller screens */
+    margin: 1px 0; /* Adjust margin for vertical stacking */
+  }
+}
+
+
+
+
+/* Body Style */
+body {
+  margin: 0;
+  padding-top: 100px; /* Adjust to match the navbar height */
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0; /* Page background color */
+}
+
+

@@ -1,0 +1,48 @@
+{
+  "name": "react-university-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "bcrypt": "^5.1.1",
+    "bootstrap": "^5.3.2",
+    "cors": "^2.8.5",
+    "git": "^0.1.5",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.2",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "## First Part YouTube link - [React JS University Website Project | Tutorial for Beginners - PART 1](https://youtu.be/v5GmKHncNB8?si=rkyGaFEDfJx_IFIr) ## Second Part YouTube link - [React JS Project University Website Tutorial With Bootstrap 5 From Scratch - PART 2](https://youtu.be/KnncqbOLwo4?si=H_0O4W_56iP5pKeJ)",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}

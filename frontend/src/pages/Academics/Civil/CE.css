@@ -1,0 +1,97 @@
+.cs-container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .cs-container h1 {
+    color: #003366; /* Dark blue color */
+    margin-bottom: 15px;
+  }
+  
+  /* Other existing styles... */
+  
+  /* Styles for sidebar - kept as is since you don't want it in FacultyProfile but might be used elsewhere */
+  .sidebar {
+    padding: 10px; /* Padding inside the border */
+    width: max-content; /* Adjust width to the content */
+    margin-left: 0; /* Align to the left side */
+  }
+  
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Align items to the start (left) */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .sidebar li {
+    padding: 5px;
+    margin-right: 5px; /* Adjust margin for spacing between items */
+  }
+  
+  .sidebar a {
+    color: #003366;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .sidebar a:hover {
+    color: #2fc55c; /* Change the color on hover */
+    transform: scale(1.1); /* Scale the text to be slightly larger on hover */
+  }
+  
+  .sidebar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #0056b3;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .sidebar a:hover::after {
+    width: 100%;
+  }
+  
+  /* Styles for faculty links in FacultyProfile */
+  .faculty-link {
+    text-decoration: none;
+    color: #003366;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px; /* Spacing between faculty links */
+  }
+  
+  .faculty-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #0056b3;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .faculty-link:hover {
+    color: #0056b3;
+  }
+  
+  .faculty-link:hover::after {
+    width: 100%;
+  }
+  .faculty-link {
+    display: block; /* Makes each <p> start on a new line */
+    margin-bottom: 10px;
+    color: #003366;
+  }
+  
+  .faculty li {
+    margin-bottom: 20px; /* Adjust the value as needed */
+  }
+  

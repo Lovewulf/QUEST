@@ -1,0 +1,410 @@
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form label {
+  margin-right: 10px;
+}
+
+.form input, .form select {
+  padding: 8px;
+  border: 1px solid #e9d6d6c2;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+.form button {
+  padding: 5px 10px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+
+.form button:hover {
+  background-color: #003366;
+}
+
+.profile-display {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+.btn {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.update-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.publication-list {
+  font-size: 0.9em;
+  position: relative; /* Ensure relative positioning for absolute children */
+}
+
+.publication-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+}
+
+.publication-details {
+  flex-grow: 1;
+}
+
+.publication-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #3e8e41;
+}
+
+
+/* ... previous CSS styles ... */
+
+.publication-list {
+  font-size: 0.9em;
+  position: relative; /* Ensure relative positioning for absolute children */
+  padding-bottom: 40px; /* Add padding to accommodate the '+' button */
+}
+
+.publication-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+}
+
+.publication-details {
+  flex-grow: 1;
+}
+
+.publication-controls {
+  display: flex;
+  gap: 10px;
+}
+
+/* Modifications for the plus button */
+.add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; /* Adjusted width for a rectangle shape */
+  height: 20px; /* Height for the rectangle */
+  border-radius: 4px; /* Less rounded corners */
+  font-size: 20px;
+  line-height: 15px;
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  background-color: #0056b3; /* Blue background */
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.add-btn:hover {
+  background-color: #003366; /* Darker blue for hover effect */
+}
+
+/* Ensure there is enough space at the bottom of the publication list for the button */
+.publication-list {
+  padding-bottom: 50px; /* Adjust padding to accommodate the button */
+}
+
+/* Styling for both Add and Modify modals */
+.modal {
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  right: 25%;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  overflow: auto; /* Allows scrolling if content is too long */
+  max-height: 80%; /* Maximum height */
+  resize: both; /* Make the modal resizable */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.modal h3 {
+  margin-top: 1;
+}
+
+.modal textarea {
+  width: 100%;
+  min-height: 100px;
+  margin-top: 10px;
+}
+
+.modal button {
+  margin-top: 10px;
+}
+
+/* If using an h3 tag for publication types */
+h3 {
+  font-size: 1.2em; /* Adjust the size as needed */
+  font-weight: bold; /* Makes the text bold */
+}
+
+/* If using a specific class, e.g., .publication-type */
+.publication-type {
+  font-size: 1em; /* Adjust the size as needed */
+  font-weight: bold; /* Makes the text bold */
+}
+/* Modal for Adding Publications */
+.add-publication-modal {
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  width: 50%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+/* Text area within the Add Publication Modal */
+.add-publication-modal textarea {
+  width: 100%;
+  min-height: 100px;
+  margin-top: 10px;
+}
+
+
+
+/* FacultyProfileDetails.css */
+
+/* Style for bold titles in the faculty profile */
+.faculty-profile p strong {
+  font-weight: bold;
+}
+
+
+
+
+
+
+/*Image Hears*/
+.faculty-login {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.faculty-login h1 {
+  font-size: 28px;
+  color: #3c2475;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+  width: 50%;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.container button {
+  background-color: #4d5f72;
+  color: #ffffff;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.container button:hover {
+  background-color: #89a378;
+}
+
+
+.faculty-login header {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns content to the bottom */
+    text-align: end; /* Centers the text horizontally */
+    background-size: cover; /* Cover the entire header area */
+    background-position: center; /* Center the background image */
+    height: 100px; /* Increase this value to adjust the height */
+    padding: 10px; /* Adjust padding as needed */
+  }
+
+  .faculty-directory header {
+    background-image: linear-gradient(rgba(218, 218, 240, 0.322), rgba(0, 0, 0, 0.945)), url('./images/Directory.png');
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; /* Aligns content to the bottom */
+      text-align: end; /* Centers the text horizontally */
+      background-size: cover; /* Cover the entire header area */
+      background-position: center; /* Center the background image */
+      height: 400px; /* Increase this value to adjust the height */
+      padding: 10px; /* Adjust padding as needed */
+    }
+
+
+
+
+
+
+
+.faculty-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.faculty-designation {
+  font-size: 14px;
+}
+
+.faculty-department {
+  font-size: 14px;
+  color: #3e77b4; /* Navy blue */
+}
+
+.faculty-contact p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.fa-envelope, .fa-phone {
+  margin-right: 10px;
+}
+
+.faculty-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.faculty-member {
+  flex-basis: calc(33.33% - 10px);
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-right: 2px solid #ccc;
+}
+
+.faculty-member:last-child {
+  border-right: none; /* Remove border for the last element */
+}
+
+.filter-section {
+  margin-bottom: 20px; /* Adjust as needed for spacing */
+}
+
+.department-select {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.department-select optgroup {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Custom scrollbar styles */
+.department-select::-webkit-scrollbar {
+  width: 10px;
+}
+
+.department-select::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.department-select::-webkit-scrollbar-thumb {
+  background: #f12222;
+}
+
+.department-select::-webkit-scrollbar-thumb:hover {
+  background: #6b38ca;
+}
+
+
+
+.alphabet-header {
+  font-weight: bold;
+  font-size: 1.5em;
+}

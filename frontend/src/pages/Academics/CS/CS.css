@@ -1,0 +1,155 @@
+.cs header {
+  position: relative; /* Add this line */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: end;
+  background-image: linear-gradient(rgba(5, 5, 34, 0.267), rgba(20, 27, 75, 0.705)), url('E:\QUESTWEB\frontend\src\components\images\CS.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  padding: 10px;
+}
+
+
+.header-background-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(20, 27, 75, 0.5); /* Semi-transparent box */
+  color: white; /* Text color */
+}
+
+
+
+
+
+.cs-container {
+  margin: 20px;
+  padding: 20px;
+}
+
+.cs-container h1 {
+  color: #091522e8; /* Dark blue color */
+  margin-bottom: 15px;
+}
+
+/* Other existing styles... */
+
+/* Styles for sidebar - kept as is since you don't want it in FacultyProfile but might be used elsewhere */
+.sidebar {
+  padding: 10px; /* Padding inside the border */
+  width: max-content; /* Adjust width to the content */
+  margin-left: 0; /* Align to the left side */
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Align items to the start (left) */
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sidebar li {
+  padding: 5px;
+  margin-right: 5px; /* Adjust margin for spacing between items */
+}
+
+.sidebar a {
+  color: #00336600;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+  color: #2fc55c; /* Change the color on hover */
+  transform: scale(1.1); /* Scale the text to be slightly larger on hover */
+}
+
+.sidebar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #0057b300;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar a:hover::after {
+  width: 100%;
+}
+
+/* Styles for faculty links in FacultyProfile */
+.faculty-link {
+  text-decoration: none;
+  color: #00336600;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px; /* Spacing between faculty links */
+}
+
+.faculty-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #94a3b4;
+  transition: width 0.3s ease-in-out;
+}
+
+.faculty-link:hover {
+  color: #394b5ec7;
+}
+
+.faculty-link:hover::after {
+  width: 100%;
+}
+.faculty-link {
+  display: block; /* Makes each <p> start on a new line */
+  margin-bottom: 10px;
+  color: #00336600;
+}
+
+.faculty li {
+  margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+
+
+.faq-section p,
+.accordion {
+    width: 95%;
+}
+
+.accordion .accordion-button:focus,
+.accordion .accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.accordion .accordion-button:not(.collapsed) {
+    background-color: #8885afa4;
+    color: #ffffff8e;
+}
+
+.accordion .accordion-button:not(.collapsed)::after {
+    filter: invert();
+}
+
+@media only screen and (max-width: 992px) {
+    .faq-section p,
+    .accordion {
+        width: 100%;
+    }
+}
